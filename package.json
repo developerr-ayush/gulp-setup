@@ -1,0 +1,28 @@
+{
+  "name": "gulp-setup",
+  "version": "1.0.0",
+  "description": "basic setup for gulp",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "gulp sass"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.24"
+  },
+  "dependencies": {
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.62.1"
+  }
+}

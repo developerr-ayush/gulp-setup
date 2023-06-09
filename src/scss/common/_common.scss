@@ -1,0 +1,46 @@
+@use '../config/' as *;
+.btn-site {
+    padding: var(--space-1) var(--space-3);
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    @include mq(md) {
+        font-size: 2rem;
+    }
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner {
+    margin: auto;
+    max-width: var(--container);
+}
+.web {
+    display: none;
+}
+main {
+    padding-top: var(--header-height);
+}
+.para {
+    font-size: var(--para);
+    margin-bottom: var(--space-4);
+    font-weight: 500;
+    @include mq(md) {
+        margin-bottom: var(--space-8);
+    }
+}
+img {
+    width: 100%;
+}
+@media (min-width:768px) {
+    .mob {
+        display: none;
+    }
+    .web {
+        display: block;
+    }
+}

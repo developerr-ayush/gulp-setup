@@ -1,0 +1,39 @@
+@use '../config/' as *;
+footer {
+    padding: var(--space-6);
+    padding-bottom: 10rem;
+    background-color: var(--footerbg);
+    text-align: center;
+    .logo-wrap {
+        justify-content: center;
+        margin-block: var(--space-6);
+    }
+    .location {
+        .text {
+            font-size: 1.6rem;
+            margin-bottom: var(--space-6);
+            color: var(--white);
+        }
+    }
+    .btn-site {
+        padding: var(--space-2) var(--space-6);
+    }
+}
+@media (min-width:768px) {
+    footer {
+        .logo-wrap {
+            &::before {
+                width: 15rem;
+                height: 18rem;
+            }
+            .logo {
+                font-size: 8rem;
+            }
+        }
+        .location {
+            .text {
+                font-size: 3rem;
+            }
+        }
+    }
+}

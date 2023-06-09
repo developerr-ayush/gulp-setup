@@ -1,0 +1,39 @@
+$colors: (
+    "primary":#FF9900,
+    "secondary":#262C3F,
+    "footerbg":#333442,
+    "text":#797979,
+    "body":#fff,
+    "info":#2AE9E9,
+    "success":#39E92A,
+    "warning":#E9BF2A,
+    "danger":#E96F2A,
+    "black":#212529,
+    "white":#F7F7FA,
+);
+$fonts: (
+    Inter:(Inter-Medium:500,
+        Inter-Bold:700,
+    ),
+    Poppins:(Poppins-Regular:400,
+        Poppins-Medium:500,
+    ),
+    elite-fonts:(elite-fonts:normal)
+);
+$breakpoints: (
+    xs: 300px,
+    sm: 576px,
+    md: 768px,
+    lg:992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+$icon: (
+    chevron-down:"\e800",
+    chevron-left:"\e801",
+    chevron-right:"\e802",
+    chevron-up:"\e803",
+    invest:"\e804",
+    stock:"\e805",
+    funds:"\e806",
+);

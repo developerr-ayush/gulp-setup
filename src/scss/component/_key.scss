@@ -1,0 +1,230 @@
+@use '../config/' as *;
+.key {
+    padding-top: var(--space-10);
+    .head {
+        max-width: 70rem;
+        margin: auto;
+        text-align: center;
+        padding-inline: var(--space-4);
+    }
+    .title {
+        color: var(--primary);
+        font: 700 var(--title-size)/1.7 $font-secondary;
+        margin-bottom: var(--space-4);
+        @include mq(md) {
+            margin-bottom: var(--space-8);
+        }
+        span {
+            display: block;
+        }
+    }
+    .investment {
+        &-wrap {
+            padding: var(--space-4);
+            .text {
+                font-size: 1.8rem;
+                @include mq(md) {
+                    font-size: 2rem;
+                }
+            }
+        }
+        &-item {
+            height: 7rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            @include mq(md) {
+                height: 9rem;
+            }
+            &::before {
+                content: '';
+                width: .3rem;
+                height: 60%;
+            }
+            &.active {
+                &::before {
+                    background-color: var(--primary);
+                }
+                .text {
+                    color: var(--black);
+                }
+                .icon {
+                    color: var(--primary);
+                }
+            }
+            &.stock {
+                .icon {
+                    &::before {
+                        content: map-get($map: $icon, $key: stock);
+                    }
+                }
+            }
+            &.invest {
+                .icon {
+                    &::before {
+                        content: map-get($map: $icon, $key: invest);
+                    }
+                }
+            }
+            &.funds {
+                .icon {
+                    &::before {
+                        content: map-get($map: $icon, $key: funds);
+                    }
+                }
+            }
+            &.disabled {
+                cursor: not-allowed;
+            }
+        }
+        &-icon {
+            flex-shrink: 0;
+            margin-right: var(--space-2);
+            width: 5rem;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include mq(md) {
+                width: 9rem;
+            }
+            .icon {
+                &::before {
+                    content: "";
+                    width: 5rem;
+                    aspect-ratio: 1/1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: $font-icon;
+                    font-size: 7rem;
+                    @include mq(md) {
+                        width: 9rem;
+                    }
+                }
+            }
+        }
+    }
+    .image-slide {
+        text-align: center;
+        display: flex;
+        overflow: hidden;
+        height: 30rem;
+        @include mq(md) {
+            height: 45rem;
+        }
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+        .image-item {
+            flex-shrink: 0;
+            width: 100%;
+            transform: translateX(100%);
+            transition: .5s;
+            &.active {
+                order: -1;
+                transform: translateX(0%);
+            }
+        }
+    }
+    .benefit {
+        &-list {
+            text-align: left;
+            padding: var(--space-1) var(--space-2);
+        }
+        &-head {
+            .title {
+                font-size: 2rem;
+                width: max-content;
+                padding-inline: var(--space-2);
+                border: .1rem solid;
+                border-radius: .5rem;
+                font-weight: 500;
+                margin-bottom: var(--space-3);
+                @include mq(md) {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+        &-item {
+            margin-block: var(--space-8);
+            &.success {
+                .title {
+                    color: var(--success);
+                }
+            }
+            &.info {
+                .title {
+                    color: var(--info);
+                }
+            }
+            &.warning {
+                .title {
+                    color: var(--warning);
+                }
+            }
+            &.danger {
+                .title {
+                    color: var(--danger);
+                }
+            }
+        }
+    }
+    .invest-now {
+        .text {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: var(--space-4);
+        }
+    }
+    &.wealthcomb {
+        img {
+            height: 30rem;
+            object-fit: contain;
+            @include mq(md) {
+                object-fit: contain;
+                height: 50rem;
+            }
+        }
+    }
+}
+@media (min-width:768px) {
+    .key {
+        .body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90rem;
+            margin: auto;
+            margin-top: var(--space-7);
+        }
+        .left,
+        .right {
+            width: 50%;
+            flex-shrink: 0;
+        }
+    }
+    .wealthcomb {
+        .body {
+            max-width: 40rem;
+            margin: auto;
+        }
+    }
+    .whyChooseUs {
+        .benefit {
+            &-list {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-6);
+            }
+            &-item {
+                margin: 0;
+                max-width: 30rem;
+            }
+        }
+    }
+}

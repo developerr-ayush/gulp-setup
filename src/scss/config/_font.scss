@@ -1,0 +1,15 @@
+@use './map' as *;
+@use './variables' as *;
+@each $font-name,
+$font-data in $fonts {
+    @each $font-family,
+    $font-weight in $font-data {
+        @font-face {
+            font-family: #{$font-name};
+            font-style: normal;
+            font-display: swap;
+            font-weight: #{$font-weight};
+            src: url("../fonts/#{$font-family}.woff2?v=#{$font-version}") format("woff2");
+        }
+    }
+}

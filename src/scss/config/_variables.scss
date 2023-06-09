@@ -1,0 +1,51 @@
+@use 'map' as *;
+@use 'mixin' as *;
+$font-version: 69117260;
+$image-version: 1.0;
+// font variable 
+$font-primary: Poppins;
+$font-secondary: Inter;
+$font-icon: elite-fonts;
+:root {
+    //    colors variable generate 
+    @each $color-key,
+    $color-value in $colors {
+        --#{$color-key}: #{$color-value};
+    }
+    // space variable 
+    @for $space from 0 through 10 {
+        --space-#{$space}: #{$space * .5rem};
+    }
+    // width height variables
+    --container:100%;
+    --header-height:7rem;
+    --logo-width: 4rem;
+    --logo-height: 5rem;
+    // font-sizes variables
+    --logo-size:2rem;
+    --para:1.8rem;
+    --title-size: 2rem;
+    --large-font:3rem;
+}
+@include mq(md) {
+    :root {
+        --header-height: 10rem;
+        --logo-width: 6rem;
+        --logo-height: 8rem;
+        --logo-size: 3.4rem;
+        --large-font: 7rem;
+        --title-size: 3.6rem;
+        --para: 2.4rem;
+        --container: 700px;
+    }
+}
+@include mq(lg) {
+    :root {
+        --container: 930px;
+    }
+}
+@include mq(xl) {
+    :root {
+        --container: 1120px;
+    }
+}
