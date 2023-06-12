@@ -9,7 +9,9 @@ $font-data in $fonts {
             font-style: normal;
             font-display: swap;
             font-weight: #{$font-weight};
-            src: url("../fonts/#{$font-family}.woff2?v=#{$font-version}") format("woff2");
+            src: local(#{$font-name}),
+            url("../fonts/#{$font-family}.woff2") format("woff2"),
+            url("../fonts/#{$font-family}.woff") format("woff");
         }
     }
 }

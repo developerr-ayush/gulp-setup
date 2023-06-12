@@ -3,9 +3,8 @@
 $font-version: 69117260;
 $image-version: 1.0;
 // font variable 
-$font-primary: Poppins;
-$font-secondary: Inter;
-$font-icon: elite-fonts;
+$font-primary: DMSans;
+$font-icon: custom-icons;
 :root {
     //    colors variable generate 
     @each $color-key,
@@ -18,34 +17,44 @@ $font-icon: elite-fonts;
     }
     // width height variables
     --container:100%;
-    --header-height:7rem;
-    --logo-width: 4rem;
+    --header-height:8rem;
+    --logo-width: 16rem;
     --logo-height: 5rem;
+    --btn-height:5rem;
     // font-sizes variables
     --logo-size:2rem;
     --para:1.8rem;
     --title-size: 2rem;
     --large-font:3rem;
+    // zindexs variables
+    --zindex-header:10
+}
+@include mq(sm) {
+    :root {
+        --container: 54rem;
+    }
 }
 @include mq(md) {
     :root {
-        --header-height: 10rem;
-        --logo-width: 6rem;
-        --logo-height: 8rem;
         --logo-size: 3.4rem;
         --large-font: 7rem;
         --title-size: 3.6rem;
         --para: 2.4rem;
-        --container: 700px;
+        --container: 72rem;
     }
 }
 @include mq(lg) {
     :root {
-        --container: 930px;
+        --container: 96rem;
     }
 }
 @include mq(xl) {
     :root {
-        --container: 1120px;
+        --container: 114rem;
+    }
+}
+@include mq(xxl) {
+    :root {
+        --container: 132rem;
     }
 }

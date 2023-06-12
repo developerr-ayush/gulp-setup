@@ -5,220 +5,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stockbee - Homepage</title>
-    <link rel="preload" href="/fonts/Inter-Bold.woff2?v=69117260" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Inter-Medium.woff2?v=69117260" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Poppins-Medium.woff2?v=69117260" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Poppins-Regular.woff2?v=69117260" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/elite-fonts.woff2?v=69117260" as="font" type="font/woff2" crossorigin>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
-    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="description" content="Codestudios">
+    <title>Codestudios</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.webp">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <header class="header-wrap">
-      <div class="inner flex">
-        <a href="/" class="logo-wrap">
-          <h1 class="logo">StockBee</h1>
-        </a>
-        <!-- <button class="btn-hamburger mob" aria-expanded="false" aria-label="Hamburger">
-          <div class="line"></div>
-        </button> -->
-        <!-- <nav class="site-nav">
-          <ul class="nav-wrap">
-            <li class="nav-item">
-              <button href="/" class="nav-anchor btn-nav-anchor" aria-expanded="false" aria-label="Sub menu"> Invest
-              </button>
-              <ul class="sub-menu">
-                <li class="nav-item"><a href="/" class="nav-anchor">Invest sub items</a></li>
-                <li class="nav-item"><a href="/" class="nav-anchor">Invest sub items</a></li>
-                <li class="nav-item"><a href="/" class="nav-anchor">Invest sub items</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <button href="/" class="nav-anchor btn-nav-anchor" aria-expanded="false"> Service </button>
-              <ul class="sub-menu">
-                <li class="nav-item"><a href="/" class="nav-anchor">Service sub items</a></li>
-                <li class="nav-item"><a href="/" class="nav-anchor">Service sub items</a></li>
-                <li class="nav-item"><a href="/" class="nav-anchor">Service sub items</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="nav-anchor">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="nav-anchor">About us</a>
-            </li>
-          </ul>
-        </nav> -->
-        <div class="login-wrap">
-          <button class="btn-site"><span class="btn-text">Login/Register</span></button>
-        </div>
-      </div>
+    <header id="header">
+     
     </header>
     <main>
-      <section class="showcase-banner">
-        <div class="inner">
-          <h2 class="title">
-            <span class="txt">One Pocket</span>
-            <span class="txt">Multiple Investments</span>
-          </h2>
-          <p class="para"> Invest your money without any hassles </p>
-          <button class="btn-site">
-            <span class="btn-text">Start Investing</span>
-          </button>
-        </div>
-      </section>
-      <section class="key features-section">
-        <div class="inner">
-          <div class="head">
-            <h3 class="title">Choose Your Investment Key With Stockbee.</h3>
-            <p class="para">Multiple choice of investment to boost your wealth</p>
-          </div>
-          <div class="body">
-            <div class="left">
-              <div class="investment-wrap">
-                <div class="investiment-list">
-                  <div class="investment-item stock active" onclick="toggleItem('stock')">
-                    <div class="investment-icon">
-                      <span class="icon">
-                      </span>
-                    </div>
-                    <p class="text"> Stock Investment </p>
-                  </div>
-                  <div class="investment-item funds" onclick="toggleItem('funds')">
-                    <div class="investment-icon">
-                      <span class="icon">
-                      </span>
-                    </div>
-                    <p class="text"> Explore Funds </p>
-                  </div>
-                  <div class="investment-item invest disabled">
-                    <div class="investment-icon">
-                      <span class="icon">
-                      </span>
-                    </div>
-                    <p class="text"> Personal Investment </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="right">
-              <div class="image-slide">
-                <div class="image-item active" id="stock">
-                  <img src="images/stock-investment.webp" alt="">
-                </div>
-                <div class="image-item" id="funds">
-                  <img src="images/explore.webp" alt="">
-                </div>
-                <div class="image-item " id="invest">
-                  <img src="images/stock-investment.webp" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="key wealthcomb">
-        <div class="inner">
-          <div class="head">
-            <h3 class="title">Coming Soon To Make Your Wealthcomb.</h3>
-            <p class="para">Soon you can use Stockbee on your Favorite Devices </p>
-          </div>
-          <div class="body">
-            <div class="image">
-              <img src="images/wealthcomb.webp" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="key whyChooseUs">
-        <div class="inner">
-          <div class="head">
-            <h3 class="title">
-              <span class="text"> What Stockbee Offers You ? </span>
-              <span class="para "> One account for all investment & trading needs </span>
-            </h3>
-            <p class="para">Soon you can use Stockbee on your Favorite Devices </p>
-          </div>
-          <div class="body">
-            <div class="benefit-list">
-              <div class="benefit-item info">
-                <div class="benefit-head">
-                  <h4 class="title">Quick Onboarding</h4>
-                </div>
-                <div class="benefit-body">
-                  <p class="para">Secure Process. Set up a account by using easy methods.</p>
-                </div>
-              </div>
-              <div class="benefit-item success">
-                <div class="benefit-head">
-                  <h4 class="title">Easy Accessibility</h4>
-                </div>
-                <div class="benefit-body">
-                  <p class="para">Login with biometrics and pin. Buy/sell your portfolio collections in one click. </p>
-                </div>
-              </div>
-              <div class="benefit-item warning">
-                <div class="benefit-head">
-                  <h4 class="title">Quick Orders</h4>
-                </div>
-                <div class="benefit-body">
-                  <p class="para">Toggle Switch Options for different orders. Proper Calculate of Quantity Pricing.</p>
-                  <div class="invest-now">
-                    <h5 class="text">Start Investing Today</h5>
-                    <button class="btn-site" aria-label="start">Start Stockbee</button>
-                  </div>
-                </div>
-              </div>
-              <div class="benefit-item danger">
-                <div class="benefit-head">
-                  <h4 class="title">Quality Details</h4>
-                </div>
-                <div class="benefit-body">
-                  <p class="para">Search any stock, funds, and personal investments. Get Quality details of your
-                    investment orders. In-depth analyses charts and graphs. Company Information & History.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
     </main>
     <footer>
-      <div class="contact-us">
-        <div class="inner">
-          <div class="logo-wrap">
-            <a href="/" class="logo"> Stockbee </a>
-          </div>
-          <div class="location">
-            <p class="text">Mumbai Maharashtra </p>
-          </div>
-          <div class="btn-wrap">
-            <a href="mailto:hello@stockbee.in" class="btn-site">Contact Us</a>
-          </div>
-        </div>
-      </div>
+   
     </footer>
-    <script>
-      const buttonArray = document.querySelectorAll("button");
-      buttonArray.forEach(toggleButtonAria);
-      function toggleButtonAria(button) {
-        button.addEventListener("click", () => {
-          let buttonAriaExpanded = button.getAttribute("aria-expanded");
-          buttonAriaExpanded == "true"
-            ? button.setAttribute("aria-expanded", "false")
-            : button.setAttribute("aria-expanded", "true");
-        });
-      }
-      function toggleItem(element) {
-        document.querySelectorAll(".image-item,.investment-item ").forEach(elements => {
-          elements.classList.remove('active')
-        });
-        document.getElementById(element).classList.add('active')
-        document.getElementsByClassName(element)[0].classList.add("active")
-      }
-    </script>
+    <script async src="./js/script.js"></script>
   </body>
 
 </html>
