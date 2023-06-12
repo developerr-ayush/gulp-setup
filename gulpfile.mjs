@@ -29,22 +29,26 @@ function jsTask() {
 }
 
 function imgTask() {
-    return src('images/**/*')
+    return src('src/img/**/*')
         .pipe(webp({
             webp: {
                 quality: 80,
                 lossless: false,
             },
         }))
-        .pipe(dest('src/img'));
+        .pipe(dest('public/images'));
 }
 function cleanFiles() {
-    return src(['public/', 'src/img'], { "allowEmpty": true })
+    return src(['public/'], { "allowEmpty": true })
         .pipe(clean())
 }
 function copyImages() {
-    return src('src/img/**/*.{webp,svg}')
+    return src('public/images/**/*.{webp,svg}')
         .pipe(dest('public/img'))
+}
+function cleanImages() {
+    return src('public/images', { "allowEmpty": true })
+        .pipe(clean())
 }
 
 function fontTask() {
@@ -80,6 +84,7 @@ export default series(
     fontTask,
     imgTask,
     copyImages,
+    cleanImages,
     browsersyncServe,
     watchTask
 );
@@ -91,7 +96,8 @@ export const build = series(
     jsTask,
     fontTask,
     imgTask,
-    copyImages
+    copyImages,
+    cleanImages,
 );
 
 // Watch Task

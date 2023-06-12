@@ -32,7 +32,6 @@ The Gulp Setup repository provides a basic folder structure and setup for a web 
 
 3. Install dependencies:
    - Open Git Bash or any Terminal (e.g., Git Bash, Command Prompt, or Terminal) [Git bash works well with this].
-   - 
    - Navigate to the project's root directory:
      ```
      cd gulp-setup
@@ -61,11 +60,32 @@ The Gulp Setup repository provides a basic folder structure and setup for a web 
      ```
      gulp
      ```
-   - This command will compile the SCSS files into CSS and start the server. The compiled CSS files will be generated in the "public" folder.
+    - This command will trigger the default Gulp task defined in the Gulp configuration files. It compiles the SCSS files into CSS, minifies the CSS using PostCSS, converts and compresses images to WebP format, and starts a local development server.
+   - The compiled CSS files will be generated in the "public" folder, along with optimized WebP images.
+
 
 2. Access the project:
-   - Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the project.
+  - Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the project.
+   - Any changes made to the source SCSS, HTML, or JavaScript files will trigger automatic compilation and browser reload.
+   
+3. Additional Gulp tasks:
+   - Apart from the default task, the Gulp setup provides additional tasks that you can use individually:
+     - `gulp compile:scss`: Compiles the SCSS files into CSS without minification.
+     - `gulp process:html`: Processes HTML files.
+     - `gulp process:js`: Processes JavaScript files.
+     - You can run these tasks individually by executing the respective command in the terminal:
+       ```
+       gulp task-name
+       ```
+
+4. Production build:
+   - To create a production-ready build of your project, run the following command in the terminal:
+     ```
+     gulp build
+     ```
+   - This task will compile SCSS, process HTML and JavaScript files, and generate an optimized build in the "public" folder. The CSS files will be in the "public/css" folder, JavaScript files in the "public/js" folder, and images in the "public/img" folder. The font files will be in the "public/fonts" folder.
+
+
 
 ## Troubleshooting
 - If you encounter any issues with the PowerShell terminal, it is recommended to use Git Bash or another terminal for a smoother experience.
-   
