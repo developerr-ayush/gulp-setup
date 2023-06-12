@@ -1,28 +1,3 @@
-$colors: (
-    "primary":#5956E9,
-    "primary-dark":#423EF3,
-    "secondary":#FFDC60,
-    "accent":#57c9da,
-    "pink":#FD346E,
-    "footerbg":#333442,
-    "text":#292930,
-    "body":#fff,
-    "info":#2AE9E9,
-    "success":#39E92A,
-    "warning":#E9BF2A,
-    "danger":#E96F2A,
-    "black":#292930,
-    "white":#fff,
-    "grey":#F6F6F6,
-    "dark-grey":#8A879F,
-);
-$fonts: (
-    DMSans:(DMSans-Regular:400,
-        DMSans-Medium:500,
-        DMSans-Bold:700,
-    ),
-    custom-icons:(custom-icons:normal)
-);
 $breakpoints: (
     xs: 300px,
     sm: 576px,
@@ -30,13 +5,4 @@ $breakpoints: (
     lg:992px,
     xl: 1200px,
     xxl: 1400px,
-);
-$icon: (
-    chevron-down:"\e800",
-    chevron-left:"\e801",
-    chevron-right:"\e802",
-    chevron-up:"\e803",
-    invest:"\e804",
-    stock:"\e805",
-    funds:"\e806",
 );
