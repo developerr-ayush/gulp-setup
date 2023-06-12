@@ -7,7 +7,7 @@ This repository provides a basic folder structure and setup for a project using 
 1. Download the repository:
    - Clone the repository using Git:
      ```
-     git clone https://github.com/your-username/gulp-setup.git
+     git clone https://github.com/shahayush480/gulp-setup.git
      ```
    - Or download the ZIP file from the repository's GitHub page.
 
