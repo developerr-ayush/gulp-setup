@@ -38,8 +38,8 @@ This repository provides a basic folder structure and setup for a project using 
 4. Configuration:
    - Update any necessary configuration settings in the project, such as the file paths or server settings, based on your requirements.
 
-5. Additional Steps (if needed):
-   - If there are any additional steps required to set up the project (e.g., creating a database, configuring environment variables), please provide instructions for those here.
+<!-- 5. Additional Steps (if needed):
+   - If there are any additional steps required to set up the project (e.g., creating a database, configuring environment variables), please provide instructions for those here. -->
 
 
 
