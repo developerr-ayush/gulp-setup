@@ -68,6 +68,4 @@ The Gulp Setup repository provides a basic folder structure and setup for a web 
 
 ## Troubleshooting
 - If you encounter any issues with the PowerShell terminal, it is recommended to use Git Bash or another terminal for a smoother experience.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
+   
