@@ -20,11 +20,20 @@ function scssTask() {
         .pipe(postcss([cssnano(), mqpacker()]))
         .pipe(dest('public/css', { sourcemaps: 'map/' }));
 }
+function onlyscss() {
+    return src('src/scss/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(dest('public/css'));
+}
 
 // JavaScript Task
 function jsTask() {
     return src('src/js/**/*.js', { sourcemaps: true })
         .pipe(terser())
+        .pipe(dest('public/js', { sourcemaps: 'map/' }));
+}
+function jsNoTask() {
+    return src('src/js/**/*.js', { sourcemaps: true })
         .pipe(dest('public/js', { sourcemaps: 'map/' }));
 }
 
@@ -88,6 +97,17 @@ export default series(
     browsersyncServe,
     watchTask
 );
+export const compileScss = series(
+    onlyscss
+)
+export const compressImage = series(
+    imgTask,
+    copyImages,
+    cleanImages,
+)
+export const processJs = series(
+    jsNoTask
+)
 
 export const build = series(
     cleanFiles,

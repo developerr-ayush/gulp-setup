@@ -1,7 +1,8 @@
 # Gulp Setup
 
 ## Description
-The Gulp Setup repository provides a basic folder structure and setup for a web project using Gulp and Dart SCSS. It aims to simplify the initial setup process and enable users to quickly start developing their projects.
+- The Gulp Setup repository provides a basic folder structure and setup for a web project using Gulp and SCSS. 
+- It aims to simplify the initial setup process and enable users to quickly start developing their projects.
 
 ### Features
 - File structure: The repository includes a pre-defined folder structure that follows common conventions for web development projects. This structure helps organize different types of files, such as HTML, CSS, JavaScript, and assets.
@@ -67,16 +68,13 @@ The Gulp Setup repository provides a basic folder structure and setup for a web 
 2. Access the project:
   - Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the project.
    - Any changes made to the source SCSS, HTML, or JavaScript files will trigger automatic compilation and browser reload.
-   
+
 3. Additional Gulp tasks:
    - Apart from the default task, the Gulp setup provides additional tasks that you can use individually:
-     - `gulp compile:scss`: Compiles the SCSS files into CSS without minification.
-     - `gulp process:html`: Processes HTML files.
-     - `gulp process:js`: Processes JavaScript files.
-     - You can run these tasks individually by executing the respective command in the terminal:
-       ```
-       gulp task-name
-       ```
+     - `gulp compileScss`: Compiles the SCSS files into CSS without minification.
+     - `gulp compressImage`: if you just need to compress images and forward into public.
+     - `gulp processJs`: Processes JavaScript files withour minification.
+     - if you need anymore commands do check `gulpfile.mjs` file to configure.
 
 4. Production build:
    - To create a production-ready build of your project, run the following command in the terminal:
