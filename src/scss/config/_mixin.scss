@@ -1,7 +1,0 @@
-@use './map' as *;
-@mixin mq($breakpoint) {
-    $size: map-get($map: $breakpoints, $key: $breakpoint );
-    @media (min-width:$size) {
-        @content;
-    }
-}
