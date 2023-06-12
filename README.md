@@ -16,7 +16,8 @@ This repository provides a basic folder structure and setup for a project using 
    - Ensure that you have Node.js installed on your machine. Gulp Setup requires Node.js version 14.x.x. If you don't have Node.js installed or have an older version, you can download it from [https://nodejs.org](https://nodejs.org) or use a version manager like nvm (Node Version Manager) to install and manage multiple versions of Node.js.
 
 3. Install dependencies:
-   - Open Git Bash or another recommended terminal (e.g., Git Bash, Command Prompt, or Terminal).
+   - Open Git Bash or any Terminal (e.g., Git Bash, Command Prompt, or Terminal) [Git bash works well with this].
+   - 
    - Navigate to the project's root directory:
      ```
      cd gulp-setup
