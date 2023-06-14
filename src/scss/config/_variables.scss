@@ -1,0 +1,24 @@
+@use "map" as *;
+@use "mixin" as *;
+
+$font-primary: "Poppins", sans-serif;
+$font-icon: "custom-icons";
+:root {
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --#{$color}-#{$shade}: #{$value};
+    }
+  }
+  @for $space from 0 through 12 {
+    --space-#{$space}: #{$space * 0.5rem};
+  }
+  @each $width, $value in $container {
+    @if $width ==xs {
+      --container: #{$value};
+    } @else {
+      @include mq($width) {
+        --container: #{$value};
+      }
+    }
+  }
+}
