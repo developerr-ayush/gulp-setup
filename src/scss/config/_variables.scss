@@ -3,6 +3,7 @@
 
 $font-primary: "Poppins", sans-serif;
 $font-icon: "custom-icons";
+$grid-columns: 12;
 :root {
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {

@@ -1,0 +1,39 @@
+@use "../config/" as *;
+@each $breakpoint, $val in $breakpoints {
+  @for $width from 1 through $grid-columns {
+    @if ($breakpoint ==xs) {
+      .grid-#{$width} {
+        display: grid;
+        grid-template-columns: repeat($width, 1fr);
+      }
+      .col-#{$width} {
+        grid-column-start: $width span;
+      }
+    } @else {
+      @include mq($breakpoint) {
+        .grid-#{$breakpoint}-#{$width} {
+          display: grid;
+          grid-template-columns: repeat($width, 1fr);
+        }
+
+        .col-#{$breakpoint}-#{$width} {
+          grid-column-start: $width span;
+        }
+      }
+    }
+  }
+
+  @for $space from 0 through 5 {
+    @if ($breakpoint ==xs) {
+      .gap-#{$space} {
+        gap: calc(#{$space} * var(--base-space));
+      }
+    } @else {
+      @include mq($breakpoint) {
+        .gap-#{$breakpoint}-#{$space} {
+          gap: calc(#{$space} * var(--base-space));
+        }
+      }
+    }
+  }
+}
