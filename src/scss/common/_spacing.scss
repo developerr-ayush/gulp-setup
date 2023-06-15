@@ -1,0 +1,45 @@
+@use "../config/" as *;
+@each $breakpoint, $val in $breakpoints {
+  @for $space from 0 through 5 {
+    $value: $space * $base-space;
+    @if ($breakpoint ==xs) {
+      .gap-#{$space} {
+        gap: $value;
+      }
+      .m-#{$space} {
+        margin: $value;
+      }
+      .p-#{$space} {
+        padding: $value;
+      }
+      @each $alias, $prop in $spacing {
+        .p#{$alias}-#{$space} {
+          padding-#{$prop}: $value;
+        }
+        .m#{$alias}-#{$space} {
+          margin-#{$prop}: $value;
+        }
+      }
+    } @else {
+      @include mq($breakpoint) {
+        .gap-#{$breakpoint}-#{$space} {
+          gap: $value;
+        }
+        .m-#{$breakpoint}-#{$space} {
+          margin: $value;
+        }
+        .p-#{$breakpoint}-#{$space} {
+          padding: $value;
+        }
+        @each $alias, $prop in $spacing {
+          .p#{$alias}-#{$breakpoint}-#{$space} {
+            padding-#{$prop}: $value;
+          }
+          .m#{$alias}-#{$breakpoint}-#{$space} {
+            margin-#{$prop}: $value;
+          }
+        }
+      }
+    }
+  }
+}

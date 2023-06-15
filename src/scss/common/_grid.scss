@@ -1,4 +1,5 @@
 @use "../config/" as *;
+// display grid
 @each $breakpoint, $val in $breakpoints {
   @for $width from 1 through $grid-columns {
     @if ($breakpoint ==xs) {
@@ -22,18 +23,5 @@
       }
     }
   }
-
-  @for $space from 0 through 5 {
-    @if ($breakpoint ==xs) {
-      .gap-#{$space} {
-        gap: calc(#{$space} * var(--base-space));
-      }
-    } @else {
-      @include mq($breakpoint) {
-        .gap-#{$breakpoint}-#{$space} {
-          gap: calc(#{$space} * var(--base-space));
-        }
-      }
-    }
-  }
 }
+// display fles

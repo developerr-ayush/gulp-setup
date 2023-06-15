@@ -10,15 +10,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.even-columns {
-  display: grid;
-  gap: var(--space-4);
-  @include mq(lg) {
-    gap: var(--space-6);
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 p {
   color: var(--neutral-200);
 }

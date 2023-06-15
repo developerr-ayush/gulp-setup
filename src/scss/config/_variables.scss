@@ -4,6 +4,7 @@
 $font-primary: "Poppins", sans-serif;
 $font-icon: "custom-icons";
 $grid-columns: 12;
+$base-space:.5rem;
 :root {
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
