@@ -22,8 +22,8 @@ body {
   font-family: $font-primary, Arial, "Noto Sans", sans-serif;
   font-weight: normal;
   font-size: 1.4rem;
-  background-color: #fafafa; //1
-  color: black; //2
+  background-color: var(--body); //1
+  color: var(--text); //2
 }
 hr {
   border-top: 0.1rem solid black;
@@ -39,32 +39,32 @@ sub,
 sup {
   font-size: 1rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1em;
+  color: var(--headings);
+}
 h1 {
   font-size: 2.8rem;
-  margin-bottom: 1rem;
 }
 h2 {
   font-size: 2.4rem;
-  margin-bottom: 1rem;
 }
 h3 {
   font-size: 2rem;
-  margin-bottom: 1rem;
 }
 h4 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
 }
 h5 {
   font-size: 1.6rem;
-  margin-bottom: 1rem;
 }
 h6 {
   font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-p {
-  margin-bottom: 1rem;
 }
 a {
   text-decoration: none;

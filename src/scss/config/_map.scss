@@ -1,32 +1,16 @@
 $colors: (
-  primary: (
-    100: hsl(218, 46%, 70%),
-    200: hsl(218, 46%, 50%),
-    300: hsl(218, 46%, 35%),
-    400: hsl(218, 46%, 25%),
-    500: hsl(218, 46%, 10%),
-  ),
-  secondary: (
-    100: hsl(39, 53%, 70%),
-    200: hsl(39, 53%, 55%),
-    300: hsl(39, 53%, 30%),
-    400: hsl(39, 53%, 25%),
-    500: hsl(39, 53%, 10%),
-  ),
-  accent: (
-    100: hsl(1, 20%, 80%),
-    200: hsl(1, 50%, 75%),
-    300: hsl(1, 66%, 50%),
-    400: hsl(1, 66%, 25%),
-    500: hsl(1, 66%, 10%),
-  ),
-  neutral: (
-    100: hsl(0, 0%, 100%),
-    200: hsl(0, 0%, 85%),
-    300: hsl(0, 0%, 50%),
-    400: hsl(0, 0%, 25%),
-    500: hsl(0, 0%, 0%),
-  ),
+  "primary": hsl(20, 80%, 55%),
+  "secondary": hsl(50, 90%, 55%),
+  "dark": hsl(0, 0%, 0%),
+  "light": hsl(0, 0%, 100%),
+  "success": hsl(120, 60%, 40%),
+  "info": hsl(195, 60%, 58%),
+  "warning": hsl(45, 100%, 50%),
+  "danger": hsl(0, 75%, 60%),
+  // additionals
+  "body": hsl(0, 0%, 80%),
+  "headings": hsl(0, 0%, 0%),
+  "text": hsl(0, 0%, 10%),
 );
 $breakpoints: (
   xs: 300px,
@@ -44,11 +28,11 @@ $container: (
   xl: 114rem,
   xxl: 132rem,
 );
-$spacing:(
-  t:top,
-  r:right,
-  b:bottom,
-  l:left,
-  x:inline,
-  y:block,
+$spacing: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+  x: inline,
+  y: block,
 );

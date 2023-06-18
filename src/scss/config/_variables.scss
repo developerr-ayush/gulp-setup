@@ -6,11 +6,12 @@ $font-icon: "custom-icons";
 $grid-columns: 12;
 $base-space:.5rem;
 :root {
-  @each $color, $shades in $colors {
-    @each $shade, $value in $shades {
-      --#{$color}-#{$shade}: #{$value};
-    }
+  @each $color, $value in $colors {
+      --#{$color}: #{$value};
   }
+
+  // assigning colors to some variables for default generation 
+
   @for $space from 0 through 12 {
     --space-#{$space}: #{$space * 0.5rem};
   }

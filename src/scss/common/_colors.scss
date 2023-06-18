@@ -1,12 +1,9 @@
 @use "../config/" as *;
-@each $color, $shades in $colors {
-  @each $shade, $value in $shades {
-    .#{$color}-#{$shade} {
-      color: #{$value};
-    }
-
-    .#{$color}-#{$shade}-bg {
-      background-color: #{$value};
-    }
+@each $color, $value in $colors {
+  .#{$color} {
+    color: #{$value};
+  }
+  .#{$color}-bg {
+    background-color: #{$value};
   }
 }
