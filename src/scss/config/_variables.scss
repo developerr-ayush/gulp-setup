@@ -3,18 +3,19 @@
 
 $font-primary: "Poppins", sans-serif;
 $font-icon: "custom-icons";
-$grid-columns: 12;
-$base-space:.5rem;
+$grid-columns: 12; // max grid columns
+$base-space: 0.5rem; //5px
+$max-space: 5; // this is maximun number for creating of spacing variables, margins and paddings utility classes
 :root {
+  // generating css variables based on map
   @each $color, $value in $colors {
-      --#{$color}: #{$value};
+    --#{$color}: #{$value};
   }
-
-  // assigning colors to some variables for default generation 
-
-  @for $space from 0 through 12 {
+  // generating space variable
+  @for $space from 0 through $max-space {
     --space-#{$space}: #{$space * 0.5rem};
   }
+  // generating container max width 
   @each $width, $value in $container {
     @if $width ==xs {
       --container: #{$value};

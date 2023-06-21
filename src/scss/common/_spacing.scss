@@ -1,6 +1,6 @@
 @use "../config/" as *;
 @each $breakpoint, $val in $breakpoints {
-  @for $space from 0 through 5 {
+  @for $space from 0 through $max-space {
     $value: $space * $base-space;
     @if ($breakpoint ==xs) {
       .gap-#{$space} {
