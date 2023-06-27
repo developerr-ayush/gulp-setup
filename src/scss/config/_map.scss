@@ -1,56 +1,26 @@
-// $colors: (
-//   "primary": hsl(20, 80%, 55%),
-//   "secondary": hsl(50, 90%, 55%),
-//   "dark": hsl(0, 0%, 0%),
-//   "light": hsl(0, 0%, 100%),
-//   "success": hsl(120, 60%, 40%),
-//   "info": hsl(195, 60%, 58%),
-//   "warning": hsl(45, 100%, 50%),
-//   "danger": hsl(0, 75%, 60%),
-//   "body": hsl(0, 0%, 80%),
-//   "headings": hsl(0, 0%, 0%),
-//   "text": hsl(0, 0%, 10%),
-// );
 $colors: (
   // Base Colors
-  "base": #000000,
-  "primary": #e86e30,
-  "secondary": #f4d125,
-
+  "base": hsl(0 0% 0%),
+  "primary": hsl(20 80% 55%),
+  "secondary": hsl(50 90% 55%),
   // Shades
-  "light": #ffffff,
-  "dark": #333333,
-  "accent": #ffcc00,
-
+  "light": hsl(0 0% 100%),
+  "dark": hsl(0 0% 20%),
+  "accent": hsl(48 100% 50%),
   // Semantic Colors
-  "success": #00cc00,
-  "warning": #ff9900,
-  "error": #ff0000,
-  "info": #0099ff,
-
+  "success": hsl(120 100% 40%),
+  "warning": hsl(36 100% 50%),
+  "error": hsl(0 100% 50%),
+  "info": hsl(204 100% 50%),
   // Functional Colors
-  "background": #f5f5f5,
-  "text": #333333,
-  "border": #cccccc,
-  "heading": #000,
-
-  // Natural Colors
-  "sky": #87ceeb,
-  "grass": #7cfc00,
-  "ocean": #000080,
-  "sun": #ffd700,
-
+  "background": hsl(0 0% 96%),
+  "text": hsl(0 0% 20%),
+  "heading": hsl(0 0% 0%),
   // Neutral Colors
-  "black": #000000,
-  "white": #ffffff,
-  "gray": #808080,
-  "silver": #c0c0c0,
-
-  // Vibrant Colors
-  "magenta": #ff00ff,
-  "cyan": #00ffff,
-  "lime": #00ff00,
-  "violet": #8a2be2
+  "black": hsl(0 0% 0%),
+  "white": hsl(0 0% 100%),
+  "gray": hsl(0 0% 50%),
+  "silver": hsl(0 0% 75%)
 );
 
 $breakpoints: (
