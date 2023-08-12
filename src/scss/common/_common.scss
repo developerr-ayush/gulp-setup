@@ -10,12 +10,17 @@
   justify-content: space-between;
   align-items: center;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 p {
-  color: var(--neutral-200);
+  color: var(--dark);
 }
 .title {
   font-size: 3rem;
-  color: var(--neutral-100);
+  color: var(--dark);
 }
 img {
   width: 100%;
@@ -25,9 +30,9 @@ img {
 }
 
 .card {
-  color: var(--neutral-100);
+  color: var(--dark);
   a {
-    color: var(--neutral-100);
+    color: var(--dark);
     text-decoration: underline;
   }
   &-content {

@@ -1,47 +1,18 @@
 @use "../config/" as *;
 @use "sass:color" as *;
 .btn {
-  // all variables available to customise
-  /*
---btn-bg
---btn-hover-after
---btn-border
---btn-color
--btn-radius
-*/
-  padding: var(--space-2) var(--space-4);
+  padding: var(--space-2) var(--space-3);
   border: 0.1rem solid var(--btn-border, var(--primary));
   border-radius: var(--btn-radius, 0.5rem);
   background-color: var(--btn-bg, var(--primary));
-  color: var(--btn-color, var(--dark));
+  color: var(--btn-color, var(--white));
   transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
+  font-size: 1.2rem;
   &:hover {
     --btn-border: var(--btn-hover-after, var(--secondary));
-    &::after {
-      left: 0;
-      width: 100%;
-    }
+    --btn-bg: var(--btn-hover, var(--secondary));
   }
   &:focus {
     outline: 1px solid var(--dark);
   }
-  &::after {
-    content: "";
-    transition: 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    background-color: var(--btn-hover-after, var(--secondary));
-  }
-  &-outline {
-    --btn-bg: transparent;
-    --btn-hover-after: var(--primary);
-  }
 }
-//   animation efflect
